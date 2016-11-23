@@ -2,7 +2,6 @@ body.landing.bg {
   background-image: url(../images/index_mockup.png);
   background-repeat: no-repeat;
   background-position: top center;
-
 }
 
 body.landing * {
@@ -54,6 +53,7 @@ body.landing * {
 }
 
 .mainSection.center section {
+  top: 182px;
   width: 100%;
 }
 
@@ -86,6 +86,26 @@ body.landing * {
   margin-left: 430px;
 }
 
+.mainSection.center section nav {
+  margin-top: 70px;
+  font-size: 0;
+}
+
+.mainSection.center section nav a {
+  margin: 0 10px;
+}
+
+.mainSection.center footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.mainSection.center footer p{
+  font-size: 16px;
+}
+
 .mockup {
   position: absolute;
   background-size: cover;
@@ -108,13 +128,17 @@ body.landing * {
 }
 
 #mockup3 {
+  top: 97px;
+  right: -732px;
+  width: 1348px;
+  height: 779px;
+  background-image: url(../images/landing/landing-mockup-3.jpg);
+  border-radius: 5px;
+  box-shadow: 0 2 10px 0 rgba(0,0,0,.2);
 
 }
 
 @media screen and (max-width: 1460px) {
-  body.landing.bg {
-    background-image: url(../images/index_mockup_ipad.png);
-  }
 
   .landingWrapper {
     width: 100%;
@@ -122,6 +146,10 @@ body.landing * {
 }
 
 @media screen and (max-width: 1180px) {
+  body.landing.bg {
+    background-image: url(../images/index_mockup_ipad.png);
+  }
+
   .landingWrapper {
     width: 100%;
   }
@@ -142,6 +170,15 @@ body.landing * {
     line-height: 27px;
   }
 
+  .mainSection.center h2 {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .mainSection.center p {
+    margin-top: 21px;
+  }
+
   .mainSection section {
     top: 105px;
     width: 410px;
@@ -155,6 +192,10 @@ body.landing * {
     right: 190px;
   }
 
+  .mainSection.center section {
+    top: 132px;
+    width: 100%;
+  }
   .mainSection section figure {
     width: 147px;
     height: 14px;
@@ -168,6 +209,20 @@ body.landing * {
   .mainSection.right section figure {
     margin-left: 303px;
   }
+
+  .mainSection.center section nav {
+    margin-top: 50px;
+  }
+
+  .mainSection.center section nav a {
+    margin: 0 6px;
+  }
+
+  .mainSection.center footer p{
+    font-size: 12px;
+  }
+
+
 
   #mockup1 {
     top: 85px;
@@ -184,5 +239,11 @@ body.landing * {
     background-image: url(../images/landing/landing-mockup-2.jpg);
   }
 
+  #mockup3 {
+    top: 72px;
+    right: : -444px;
+    width: 960px;
+    height: 555px;
 
+  }
 }
