@@ -8,6 +8,10 @@ body.landing * {
   transition: all .3s ease;
 }
 
+.compact {
+  display: none;
+}
+
 .landingWrapper {
   position: relative;
   display: flex;
@@ -100,6 +104,7 @@ body.landing * {
   bottom: 0;
   right: 0;
   width: 100%;
+  padding-bottom: 35px;
 }
 
 .mainSection.center footer p{
@@ -135,11 +140,9 @@ body.landing * {
   background-image: url(../images/landing/landing-mockup-3.jpg);
   border-radius: 5px;
   box-shadow: 0 2 10px 0 rgba(0,0,0,.2);
-
 }
 
 @media screen and (max-width: 1460px) {
-
   .landingWrapper {
     width: 100%;
   }
@@ -148,10 +151,6 @@ body.landing * {
 @media screen and (max-width: 1180px) {
   body.landing.bg {
     background-image: url(../images/index_mockup_ipad.png);
-  }
-
-  .landingWrapper {
-    width: 100%;
   }
 
   .mainSection {
@@ -218,12 +217,6 @@ body.landing * {
     margin: 0 6px;
   }
 
-  .mainSection.center footer p{
-    font-size: 12px;
-  }
-
-
-
   #mockup1 {
     top: 85px;
     right: 0px;
@@ -244,6 +237,104 @@ body.landing * {
     right: : -444px;
     width: 960px;
     height: 555px;
+  }
+}
 
+@media screen and (max-width: 1180px) {
+  body.landing.bg {
+    background-image: url(../images/index_mockup_ipad_portrait.png);
+  }
+
+  .full {
+    display: none;
+  }
+
+  .compact {
+    display: block;
+  }
+
+  .mainSection {
+    width: 910px;
+    height: 1024px;
+  }
+
+  .mainSection h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .mainSection p {
+    margin-top: 21px;
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  .mainSection.center h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .mainSection.center p {
+    margin-top: 35px;
+  }
+
+  .mainSection section {
+    top: 90px;
+    width: 580px;
+  }
+
+  .mainSection.left section,
+  .mainSection.right section {
+    left: 165px;
+  }
+
+  .mainSection.center section {
+    top: 260px;
+  }
+
+  .mainSection section figure {
+    width: 210px;
+    height: 20px;
+    margin-top: 50px;
+  }
+
+  .mainSection.left section figure,
+  .mainSection.right section figure {
+    margin-left: -60px;
+  }
+
+  .mainSection:nth-child(3) section figure {
+    margin-left: 430px;
+  }
+
+  .mainSection.center section nav {
+    margin-top: 130px;
+  }
+
+  .mainSection.center section nav a {
+    margin: 0 10px;
+  }
+
+
+  #mockup1 {
+    top: 350px;
+    right: -34px;
+    width: 621px;
+    height: 560px;
+  }
+
+  #mockup2 {
+    top: 415px;
+    left: 333px;
+    width: 464px;
+    height: 584px;
+  }
+
+  #mockup3 {
+    top: auto;
+    bottom: 0;
+    right: -30px;
+    width: 836px;
+    height: 483px;
   }
 }
