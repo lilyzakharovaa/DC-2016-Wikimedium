@@ -4,7 +4,7 @@
   }
 }
 
-@media screen and (max-width: 1080px)  {
+@media screen and (max-width: 1080px) {
   .galleryNav div::before,
   .galleryNav div::after {
     background: white;
@@ -22,7 +22,7 @@
 @media screen and (max-width: 768px) {
   .galleryRail figure {
     width: 768px;
-    min-width: 768;
+    min-width: 768px;
   }
 }
 
@@ -44,8 +44,6 @@
     height: 190px;
   }
 }
-
-
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .sidebar {

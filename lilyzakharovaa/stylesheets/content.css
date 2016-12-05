@@ -1,3 +1,7 @@
+article {
+  padding-bottom: 40px;
+}
+
 article a {
   text-decoration: underline;
 }
@@ -14,10 +18,10 @@ article h3 {
   font-weight: bold;
 }
 
-article h1{
+article h1 {
+  margin-top: 16px;
   font-size: 40px;
   line-height: 46px;
-  margin-top: 16px;
 }
 
 article h1 + p {
@@ -28,10 +32,10 @@ article h1 + p {
   color: rgba(0, 0, 0, .4);
 }
 
- article h2 {
+article h2 {
+  margin-top: 43px;
   font-size: 32px;
   line-height: 36px;
-  margin-top: 43px;
 }
 
 article h2 + p {
@@ -39,9 +43,9 @@ article h2 + p {
 }
 
 article h3 {
+  margin-top: 36px;
   font-size: 28px;
   line-height: 34px;
-  margin-top: 36px;
 }
 
 article h3 + p {
@@ -56,8 +60,8 @@ article li {
 }
 
 article blockquote {
-  font-style: italic;
   position: relative;
+  font-style: italic;
 }
 
 article blockquote::before {
@@ -77,6 +81,7 @@ article blockquote + p,
 article blockquote + blockquote {
   margin-top: 29px;
 }
+
 article ul {
   margin: 29px auto;
   list-style-type: disc;
@@ -88,13 +93,13 @@ article li {
 
 article > img,
 article > iframe {
+  display: block;
   width: 1020px;
   margin: 80px auto;
-  display: block;
-  }
+}
 
 article img + h2,
-article iframe {
+article iframe + h2 {
   margin-top: -1px;
 }
 
@@ -118,5 +123,5 @@ article h3 + iframe {
 }
 
 article > iframe {
-  height: 575px;
+  height: 574px;
 }

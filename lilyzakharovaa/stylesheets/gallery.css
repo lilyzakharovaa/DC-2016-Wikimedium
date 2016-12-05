@@ -4,19 +4,22 @@
 }
 
 .galleryRail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
 .galleryRail img {
-  width: 1020px;
   display: block;
+  width: 1020px;
   margin: 0 auto;
 }
 
 .galleryRail figure {
-  width: 100%;
-  min-width: 100%;
+  width: 100vw;
+  min-width: 100vw;
 }
 
 .gallery figcaption {
@@ -27,10 +30,16 @@
   color: rgba(0,0,0,.4);
 }
 
-.galleryNav  {
+.galleryNav {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   height: calc(100% - 51px);
@@ -64,13 +73,16 @@
 
 .galleryNav div::after {
   width: 20px;
-  height: 5px
+  height: 5px;
 }
 
 #prev {
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
 #next {
+  -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
 }
+Contact GitHub API Training Shop Blog About
